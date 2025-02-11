@@ -1,0 +1,28 @@
+.priceInput {
+    cursor: pointer;
+}
+
+.downArrow {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.searchInputResult {
+    position: absolute;
+    bottom: 0px;
+    left: 7px;
+    display: flex;
+    color: white;
+    /* align-items: start; */
+}
+
+.star {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+}

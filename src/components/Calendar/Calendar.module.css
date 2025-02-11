@@ -1,0 +1,57 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(236, 236, 236, 5);
+}
+
+th, td {
+    border: 1px solid rgba(204, 204, 204, 0.1);
+    text-align: center;
+}
+
+.weekdays, .hourCell {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;
+}
+
+.dayFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* This will make all child divs stretch to the same height */
+}
+
+.dayFrame div {
+    min-height: 15.5px;
+    flex: 1; /* This makes all divs take up an equal amount of space */
+}
+
+.hourRange {
+    padding-top: 5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+.available {
+    background-color: #90ee90; /* Light green to indicate availability */
+}
+
+.cellFrame {
+    position: relative;
+}
+
+.infoTxt {
+    right: -50%;
+    padding: 5px;
+    position: absolute;
+    width: max-content;
+    z-index: 100;
+    font-size: 12px;
+    background-color: var(--transparent-black);
+    color: var(--transparent-gray);
+}

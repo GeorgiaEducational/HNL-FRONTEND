@@ -1,0 +1,65 @@
+.rangeFormContainer {
+    position: relative;
+}
+
+.rangeForm {
+    position: absolute;
+    padding: 10px;
+    top: 23px;
+    width: 100%;
+    color: white;
+    background-color: rgba(43, 43, 43, 0.7);
+    border-radius: 5px;
+}
+
+.rangesInput {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+}
+
+.rangeForm input {
+    border-radius: 3px;
+    font-size: 15px;
+    max-width: 80px;
+    max-height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 4px;
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.rangeOptions {
+    padding-top: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.reset {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.okBtn {
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+}
+
+.searchInput {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 0 0 2px 5px;
+}

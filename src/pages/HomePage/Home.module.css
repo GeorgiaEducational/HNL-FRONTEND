@@ -1,0 +1,58 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: calc(100vh - 5vh - 20px); /* height after navbar is applied. */
+    background-image: url('../../assets/images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.searchDiv {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    background-color: rgba(43, 43, 43, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.searchTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(190, 190, 190);
+    cursor: default;
+}
+
+.searchCriteria {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.searchCriteria .searchInput {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 0 0 2px 5px;
+}
+
+.searchCriteria input::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+
+@media (max-width: 760px) {
+    .searchCriteria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 120px;
+    }
+}

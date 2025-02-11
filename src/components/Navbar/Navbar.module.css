@@ -1,0 +1,44 @@
+.navbar {
+    max-height: 5vh;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 10px 20px 10px 20px;
+    color: var(--white-1);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    column-gap: 12px;
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.navItem {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.authDiv {
+    position: relative;
+}
+
+.signup {
+    position: absolute;
+    top: 33px;
+    left: -14px;
+    width: max-content;
+    background-color: var(--primary-color);
+    padding: 10px 15px 10px 15px;
+    border-top: 1px solid var(--white-1);
+}

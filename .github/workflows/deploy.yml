@@ -32,5 +32,5 @@ jobs:
           aws-region: us-east-1  # replace with your bucket's region if needed
 
       - name: Deploy to S3
-        run: aws s3 sync build/ s3://hnl-website --delete
+        run: aws s3 sync dist/ s3://hnl-website --delete
         # --delete removes files that are no longer in your build/ folder

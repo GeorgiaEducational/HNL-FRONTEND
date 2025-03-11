@@ -27,7 +27,7 @@ function Home() {
     return <div className={styles.content}>
 
     <div className={styles.searchDiv}>
-        <h2 className={styles.searchTitle}>Find your sexiest teacher!</h2>
+        <h2 className={styles.searchTitle}>Find your teacher!</h2>
 
         <div className={styles.searchCriteria}>
             <input 

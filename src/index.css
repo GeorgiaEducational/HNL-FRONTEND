@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
   --primary-color: rgb(224, 224, 95);
@@ -9,74 +8,132 @@
 
   --transparent-black: rgba(43, 43, 43, 0.7);
   --transparent-black-2: rgba(43, 43, 43, 0.103);
+  --strong-black: rgb(29, 29, 29);
 
   --transparent-gray: rgba(236, 236, 236, 0.7);
 
+  --bg: rgba(236, 236, 236, 0.7);
+  --card: #fff;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --accent: #ef4444;
+  --accent-2: #e11d48;
+  --border: #e5e7eb;
+  --chip: #f3f4f6;
+  --gold: #f59e0b;
+
   --green-1: #198754;
   --green-2: #146841;
+
+  --small: 12px;
+  --mid: 16px;
+  --large: 1.5em;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
 }
 
 a {
-    outline: none;
-    text-decoration: none;
-    color: white;
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: var(--bg);
 }
 
 .mainBtn {
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    color: white;
-    background-color: var(--primary-color);
-    font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.ghostBtn {
+  border: none;
+  background: transparent;
+  border-color: var(--border);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.ghostBtn:hover {
+  background: #f9fafb;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mainBtn:hover {
-    cursor: pointer;
-    background-color: var(--secondary-color);
-    transition: background-color 0.5s;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  transition: background-color 0.5s;
 }
 
 .successBtn {
-    color: #fff;
-    background-color: var(--green-1);
-    padding: 4px;
-    font-size: 15px;
-    width: 220px;
-    height: 32px;
-    border: none;
-    border-radius: 3px;
+  color: #fff;
+  background-color: var(--green-1);
+  padding: 4px;
+  font-size: 15px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-radius: 3px;
 }
 
 .successBtn:hover {
-    cursor: pointer;
-    background-color: var(--green-2);
-    transition: background-color 0.5s;
+  cursor: pointer;
+  background-color: var(--green-2);
+  transition: background-color 0.5s;
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .activated {
-    visibility: visible !important;
-    opacity: 100 !important;
-    transition-duration: 0.3s;
+  visibility: visible !important;
+  opacity: 100 !important;
+  transition-duration: 0.3s;
 }
 
 .underline {
-    border-bottom: 1px solid var(--secondary-color) !important;
+  border-bottom: 1px solid var(--secondary-color) !important;
 }
 
 .minusSymbol {
-    width: 18px;
-    height: 18px;
-    filter: invert(1);
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
+.trans-black-small,
+.trans-black-mid,
+.trans-black-large {
+  color: var(--transparent-black);
+}
+
+.trans-black-small {
+  font-size: var(--small);
+}
+
+.trans-black-mid {
+  font-size: var(--mid);
+}
+
+.trans-black-large {
+  font-size: var(--large);
+}
+
+.strong-black-large {
+  font-size: var(--large);
+  color: var(--strong-black);
+  font-weight: bold;
 }

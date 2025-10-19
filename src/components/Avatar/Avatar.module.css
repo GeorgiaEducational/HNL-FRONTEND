@@ -1,0 +1,14 @@
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  display: grid;
+  place-items: center;
+  color: #334155;
+  font-weight: 800;
+  font-size: 28px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(2, 6, 23, 0.08);
+  flex: 0 0 auto;
+}
